@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato | Maria Elisa Laveli</title>
+  <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+ <section class="contato">
+
+  <div class="contato-header">
+    <h1>Contato</h1>
+    <p class="contato-subtitle">
+      Entre em contato comigo pelos canais abaixo ou envie uma mensagem
+    </p>
+    <hr class="linha-contato">
+</div>
+
+    <!-- INFO DE CONTATO -->
+    <div class="contato-info">
+
+      <div class="info-item">
+          <img src="icon/tel.png" alt="Telefone">
+        <h3>Telefone</h3>
+        <p>(11) 99204-8965</p>
+      </div>
+
+      <div class="info-item">
+          <img src="icon/git.png" alt="GitHub">
+        <h3>GitHub</h3>
+        <a href="https://github.com/Maria-Elisa-Laveli" target="_blank">
+     Maria-Elisa-Laveli
+        </a>
+      </div>
+
+      <div class="info-item">
+                  <img src="icon/in.png"  alt="Linkedin">
+
+        <h3>LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/mariaelisalaveli" target="_blank">
+    https://www.linkedin.com/in/mariaelisalaveli
+        </a>
+      </div>
+
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div class="contato-form">
+      <h2>Envie uma mensagem</h2>
+
+     <form id="contact-form">
+  <input type="text" name="name" placeholder="Seu nome" required>
+  <input type="email" name="email" placeholder="Seu email" required>
+  <textarea name="message" placeholder="Sua mensagem" required></textarea>
+  <button type="submit">Enviar mensagem</button>
+</form>
+
+    </div>
+
+  </section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-info">
+      <h3>Maria Elisa Laveli</h3>
+      <p>Desenvolvedora Full Stack Júnior</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/mariaelisalaveli" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Maria-Elisa-Laveli" target="_blank">GitHub</a>
+      <a href="mailto:marialaveli9@gmail.com">Email</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Maria Elisa Laveli. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast">
+  <p id="toast-message"></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="cont.js"></script>
+
+
+
+
+</body>
+</html>

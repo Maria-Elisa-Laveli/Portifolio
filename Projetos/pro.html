@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projetos | Maria Elisa Laveli</title>
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+
+  <!-- ================= PROJETOS ================= -->
+  <section class="projects">
+    <h1>Principais Projetos</h1>
+    <hr>
+
+    <div class="projects-grid">
+
+      <!-- PROJETO 1 -->
+      <div class="project-card" data-project="lotte">
+        <img src="midia-lotte/logo.png" alt="L'otte – Cosmetics">
+        <div class="project-info">
+          <h2>L'otte – Cosmetics</h2>
+          <p>Plataforma web de diagnóstico capilar e e-commerce</p>
+        </div>
+      </div>
+
+      <!-- PROJETO 2 -->
+      <div class="project-card" data-project="marcenaria">
+        <img src="midia-lav/frente.png" alt="Laveli Marcenaria">
+        <div class="project-info">
+          <h2>Laveli Marcenaria</h2>
+          <p>Cartão de visitas – identidade visual</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MODAL (ÚNICO) ================= -->
+  <div id="projectModal" class="modal">
+
+    <div class="modal-content project-modal">
+
+      <span class="close">&times;</span>
+
+      <!-- TEXTO DO PROJETO -->
+      <div class="project-description" id="modalDescription">
+        <!-- preenchido via JS -->
+      </div>
+
+      <!-- ÁREA PRINCIPAL (VÍDEO / IMAGEM) -->
+      <div class="project-main">
+          <iframe
+    id="projectVideo"
+    src="https://www.youtube.com/embed/iG9iTidrlRA"
+    title="Vídeo do projeto L'otte"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+        <img id="expandedImage" alt="Imagem expandida">
+        <button id="backToVideo">Voltar</button>
+      </div>
+
+      <!-- CARROSSEL -->
+      <div class="carousel">
+        <button class="carousel-btn prev">&#10094;</button>
+
+        <div class="carousel-track" id="carouselTrack">
+          <!-- imagens via JS -->
+        </div>
+
+        <button class="carousel-btn next">&#10095;</button>
+      </div>
+
+    </div>
+  </div>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-info">
+      <h3>Maria Elisa Laveli</h3>
+      <p>Desenvolvedora Full Stack Júnior</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="mailto:seuemail@email.com">Email</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Maria Elisa Laveli. Todos os direitos reservados.</p>
+  </div>
+</footer>
+  <script src="pro.js"></script>
+</body>
+</html>

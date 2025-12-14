@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.contato {
+  min-height: 100vh;
+  padding: 80px 8%;
+}
+
+.contato h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+    font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.contato-subtitle {
+ margin-top: 15px;
+  font-size: 1.8rem;
+  color: #666;
+}
+
+
+.linha-contato {
+  width: 1000px;
+  height: 5px;
+  border: none;
+  background-color: #8f85f4; /* ou #1a0dab se preferir azul */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}   
+
+/* INFO */
+.contato-info {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.info-item p,
+.info-item a {
+  font-size: 1rem;
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+/* FORM */
+.contato-form {
+  max-width: 600px;
+}
+
+.contato-form h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contato-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contato-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contato-form button {
+  width: fit-content;
+  padding: 14px 35px;
+  background-color: #8f85f4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contato-form button:hover {
+  background-color: #0f057a;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .contato-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.footer {
+  background-color: #8f85f4;
+  color: #ffffff;
+  padding: 50px 8% 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.footer-info p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #5afa8c;
+  color: #fff;
+  padding: 18px 28px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
