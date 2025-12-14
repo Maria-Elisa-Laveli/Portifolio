@@ -194,3 +194,108 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+@media (max-width: 768px) {
+
+  /* ===== CONTAINER ===== */
+  .contato {
+    padding: 50px 5%;
+    min-height: auto;
+  }
+
+  .contato h1 {
+    font-size: 2rem;
+
+  }
+
+  .contato-subtitle {
+    font-size: 1.1rem;
+
+    margin-top: 10px;
+    color: #666;
+  }
+
+  .linha-contato {
+    width: 60%;
+    height: 3px;
+   margin: 15px 0 20px 0;
+   
+  }
+
+  /* ===== INFO ===== */
+   .contato-info {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .info-item {
+    flex-direction: row; /* ícone à esquerda, texto à direita */
+    align-items: center;
+    text-align: left;
+    gap: 15px; /* espaço entre ícone e texto */
+  }
+
+  .info-item h3 {
+    font-size: 1rem;
+  }
+
+  .info-item p,
+  .info-item a {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+
+  .info-item img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0; /* remove o espaçamento extra embaixo */
+  }
+}
+  /* ===== FORM ===== */
+  .contato-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .contato-form h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contato-form form {
+    gap: 15px;
+  }
+
+  .contato-form input,
+  .contato-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .contato-form textarea {
+    height: 120px;
+  }
+
+  .contato-form button {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* ===== TOAST ===== */
+  .toast {
+    bottom: 20px;
+    right: 20px;
+    padding: 14px 24px;
+    font-size: 0.85rem;
+  }
+
+ .contato h1,
+  .contato-form h2,
+  .contato-subtitle {
+    text-align: left; /* agora os títulos ficam alinhados à esquerda */
+    margin-left: 0;   /* remove margens extras */
+  }

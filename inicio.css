@@ -44,8 +44,9 @@ body {
 }
 
 .btn-primary {
+
   margin-top: 60px;
-  padding: 16px 40px; /* botão maior */
+  padding: 16px 40px;
   background-color: #8f85f4;
   color: #fff;
   border: none;
@@ -53,7 +54,10 @@ body {
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+
+  text-decoration: none; /* remove a linha */
 }
+
 
 
 
@@ -183,4 +187,137 @@ html {
   text-align: center;
   font-size: 0.85rem;
   opacity: 0.8;
+}
+/* =====================
+   RESPONSIVO - CELULAR
+===================== */
+/* =====================
+   MOBILE REFINADO
+===================== */
+@media (max-width: 768px) {
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 6% 60px;
+    gap: 25px;
+  }
+
+  .hero-text {
+    padding-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+    margin-top: 10px;
+  }
+
+  .hero-text hr {
+    width: 60%;
+    height: 3px;
+    margin: 20px auto;
+  }
+
+  .btn-primary {
+    margin: 30px auto 0;
+    padding: 14px 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    border-radius: 12px;
+  }
+
+  /* ===== SOBRE ===== */
+  .sobre {
+    min-height: auto;
+    padding: 70px 6%;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .sobre-titulo h2 {
+    font-size: 2.2rem;
+   
+
+  .sobre-titulo p {
+    font-size: 1.1rem;
+    max-width: 100%;
+ 
+  }
+
+  .sobre-texto p {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  /* ===== MENU ===== */
+  .menu {
+    padding: 15px 6%;
+  }
+
+  .menu nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    padding: 40px 6% 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+
+  .menu {
+    padding: 12px 5%;
+  }
+
+  .menu nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    overflow-x: auto;          /* permite rolar se faltar espaço */
+    white-space: nowrap;
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  .menu nav ul::-webkit-scrollbar {
+    display: none;             /* Chrome/Safari */
+  }
+
+  .menu nav ul li a {
+    font-size: 0.85rem;        /* abas menores */
+    padding: 6px 8px;
+  }
+}
 }

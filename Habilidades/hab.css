@@ -175,3 +175,69 @@ body {
   font-size: 0.85rem;
   opacity: 0.8;
 }
+@media (max-width: 768px) {
+
+  /* ===== TÍTULO ===== */
+  .skills h1 {
+    font-size: 2rem;
+    text-align: left; /* alinhado à esquerda no mobile */
+    margin-bottom: 20px;
+  }
+
+  /* ===== GRID ===== */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* ===== CARD ===== */
+  .skill-card {
+    padding: 20px;
+    text-align: left; /* ícone e texto alinhados à esquerda */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .skill-card img {
+    width: 50px;
+    margin-bottom: 0;
+  }
+
+  .skill-card span {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .skills h1 {
+    font-size: 1.8rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill-card {
+    flex-direction: row; /* mantém ícone à esquerda */
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .skill-card img {
+    width: 40px;
+  }
+
+  .skill-card span {
+    font-size: 0.95rem;
+  }
+}
+  .skills hr {
+    width: 40%; /* menor que antes, mais proporcional */
+    height: 3px;
+    margin: 15px 0 40px;
+  }

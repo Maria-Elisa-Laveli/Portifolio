@@ -271,3 +271,102 @@
   border-radius: 12px;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+
+  /* ===== PROJETOS ===== */
+  .projects {
+    padding: 50px 5%;
+    background-size: 200px; /* fundo menor */
+    min-height: auto;
+  }
+
+  .projects h1 {
+    font-size: 2rem;
+ 
+    margin-bottom: 10px;
+  }
+
+  .projects hr {
+    width: 50%;
+    height: 3px;
+     margin: 15px 0 20px 0;
+   
+  }
+
+  /* ===== GRID ===== */
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  /* ===== CARD ===== */
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+
+  .project-info h2 {
+    font-size: 1.25rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+
+  /* ===== MODAL ===== */
+  .modal-content {
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 95%;
+    max-height: 90vh;
+  }
+
+  .project-description h3 {
+    font-size: 1.15rem;
+  }
+
+  .project-description p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .project-main video,
+  .project-main img,
+  .project-main iframe {
+    max-height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .carousel-track img {
+    width: 70px;
+  }
+
+  #backToVideo {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+}
