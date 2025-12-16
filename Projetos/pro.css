@@ -271,6 +271,43 @@
   border-radius: 12px;
   margin-bottom: 20px;
 }
+
+.menu {
+  position: sticky;
+  top: 0;
+  background-color: #8f85f4; /* mesmo azul do botão */
+  padding: 20px 8%;
+  z-index: 1000;
+}
+
+
+.menu nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  position: relative;
+}
+
+.menu nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s ease;
+}
+
+.menu nav ul li a:hover::after {
+  width: 100%;
+}
 @media (max-width: 768px) {
 
   /* ===== PROJETOS ===== */
@@ -368,5 +405,32 @@
   #backToVideo {
     font-size: 0.85rem;
     padding: 5px 10px;
+  }
+}
+@media (max-width: 768px) {
+
+  .menu {
+    padding: 12px 5%;
+  }
+
+  .menu nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    overflow-x: auto;          /* permite rolar se faltar espaço */
+    white-space: nowrap;
+    scrollbar-width: none;     /* Firefox */
+  }
+
+  .menu nav ul::-webkit-scrollbar {
+    display: none;             /* Chrome/Safari */
+  }
+
+  .menu nav ul li a {
+    font-size: 0.85rem;        /* abas menores */
+    padding: 6px 8px;
   }
 }

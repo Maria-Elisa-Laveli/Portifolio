@@ -112,8 +112,17 @@ html {
   background-color: #8f85f4; /* mesmo azul do botão */
   padding: 20px 8%;
   z-index: 1000;
+    opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
+.menu.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
 
 .menu nav ul {
   display: flex;
