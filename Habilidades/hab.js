@@ -21,6 +21,37 @@ const skills = {
     text: "Modelagem de banco de dados, criação de tabelas, relacionamentos, consultas SQL e integração com sistemas."
   },
 
+  git: {
+  title: "Git & GitHub",
+  text: "Uso de controle de versão com Git, criação de repositórios, commits organizados e colaboração via GitHub."
+},
+
+node: {
+  title: "Node.js",
+  text: "Desenvolvimento de aplicações back-end com Node.js, criação de servidores e integração com front-end."
+},
+
+api: {
+  title: "APIs REST",
+  text: "Criação e consumo de APIs REST, envio e recebimento de dados em formato JSON."
+},
+
+resp: {
+  title: "Responsividade",
+  text: "Desenvolvimento de interfaces adaptáveis para desktop, tablet e mobile utilizando abordagem mobile first."
+},
+
+uiux: {
+  title: "UI/UX Design",
+  text: "Criação de interfaces intuitivas focadas na experiência do usuário, usabilidade e design visual."
+},
+
+figma: {
+  title: "Figma",
+  text: "Criação de protótipos, layouts e organização visual de interfaces antes da implementação."
+},
+
+
   // SOFT SKILLS
   com: {
     title: "Comunicação",
@@ -41,7 +72,17 @@ const skills = {
   reso: {
     title: "Resolução de problemas",
     text: "Capacidade de analisar problemas, buscar soluções eficientes e aprender rapidamente com novos desafios."
-  }
+  },
+
+  apr: {
+  title: "Aprendizado contínuo",
+  text: "Facilidade para aprender novas tecnologias, ferramentas e se adaptar a novos desafios."
+},
+
+proa: {
+  title: "Proatividade",
+  text: "Iniciativa para buscar soluções, melhorias e contribuir ativamente nos projetos."
+}
 };
 
 const modal = document.getElementById("skillModal");
