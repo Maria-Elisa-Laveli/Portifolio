@@ -64,19 +64,7 @@ body {
   font-weight: 600;
 }
 
-.skills::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 350px;
-  height: 100%;
-  background-image: url( "icon/fundo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.4;
-  pointer-events: none;
-}
+
 /* MODAL */
 .modal {
   display: none;
