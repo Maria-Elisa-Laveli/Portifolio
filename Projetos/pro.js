@@ -61,7 +61,40 @@ const projects = {
       "midia-lav/frente.png",
       "midia-lav/tras.png"
     ]
-  }
+  },
+
+    mobilier: {
+    description: `
+      <h3>Sobre o projeto</h3>
+
+      <p>
+        Projeto de design gráfico desenvolvido para a Laveli Marcenaria,
+        com foco na criação de um cartão de visitas profissional.
+      </p>
+
+      <p>
+        O objetivo foi transmitir seriedade, qualidade e confiança,
+        utilizando uma identidade visual simples, elegante e funcional.
+      </p>
+    `,
+    video:"midia-https://www.youtube.com/embed/iG9iTidrlRA",
+    images: [
+      "midia-mobilier/ini.png",
+      "midia-mobilier/cad.png",
+      "midia-mobilier/menu.png",
+            "midia-mobilier/per.png",
+                  "midia-mobilier/sobre.png",
+                        "midia-mobilier/help.png",
+                              "midia-mobilier/conta.png",
+                                    "midia-mobilier/car.png",
+
+
+
+
+
+
+    ]
+  },
 };
 
 const modal = document.getElementById("projectModal");

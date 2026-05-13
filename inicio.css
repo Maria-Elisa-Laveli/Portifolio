@@ -68,8 +68,10 @@ body {
 
 
 .hero-image img {
-  width: 350px;
+  width: 430px;
   border-radius: 6px;
+  margin-right: 80px;
+
 }
 
 .sobre {
